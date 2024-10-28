@@ -1,5 +1,5 @@
 # films-from-the-big-picture
-Creating Letterboxd lists for the Big Picture podcast archive.
+## Creating Letterboxd lists for the Big Picture podcast archive.
 
 This project aims to create an up-to-date catalogue of Big Picture podcast episodes as Letterboxd lists. I love movies - I’m an avid Big Picture listener and longtime Letterboxd user. The creation of this catalogue is an effort to share a valuable resource with other members of both communities.
 
@@ -7,7 +7,7 @@ I have listened to the Big Picture podcast since 2018 - the knowledge and opinio
 
 Because many of the discussions in this podcast revolve around list-making, this was low-hanging fruit for an LLM to help synthesize and format the discussions into a structured output. The LLM was also well suited to identify the films mentioned with an output that can be used in an automated uploaded to Letterboxd.
 
-Reason to Build
+## Reason to Build
 
 Letterboxd is where film nerds share reviews, lists, and connect with one another. Letterboxd is where I save a watch list, and can filter for movies I want to watch that are available on the services I subscribe to. When it comes time to watch a movie, I want to easily access the recommendations on Letterboxd from the Big Picture pod I listened to last week without having to listen to the podcast again.
 
