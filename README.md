@@ -23,9 +23,9 @@ Timestamp Links: Timestamp links for each film mentioned to facilitate a frictio
 
 All steps are executed in a single Google Colab notebook that is set to execute weekly to keep the catalogue up to date.
 
-1. Download podcasts from the RSS feed using Podcast downloader. This repo creates a catalogue of files to transcribe from an RSS feed. Relatively plug and play. Able to save the files in .WAV format, required for whisperX. Each week I’ll run the script to download the most recent episodes and execute the remaining steps.
+1. Download podcasts from the RSS feed using [podcast-downloader]([url](https://github.com/dplocki/podcast-downloader)). This repo creates a catalogue of files to transcribe from an RSS feed. Relatively plug and play. Able to save the files in .WAV format, required for whisperX. Each week I’ll run the script to download the most recent episodes and execute the remaining steps.
 
-2. Transcribe and diarize the podcast audio using WhisperX. There are many options but this seems like the most popular / fastest. I was happy with the accuracy. The transcripts are usually spot on but the diarization struggles occasionally when two speakers have a similar voice pitch or talk over one another.   
+2. Transcribe and diarize the podcast audio using [WhisperX]([url](https://github.com/m-bain/whisperX)). There are many options but this seems like the most popular / fastest. I was happy with the accuracy. The transcripts are usually spot on but the diarization struggles occasionally when two speakers have a similar voice pitch or talk over one another.   
 
 3. Name the speakers in the diarized transcript using OpenAI gpt-4o. Using a list of hosts and guests from the podcast, I ask got-4o to identify one speaker at a time using the context of the transcript.
 
@@ -33,4 +33,4 @@ All steps are executed in a single Google Colab notebook that is set to execute 
 
 5. Create table of films mentioned in the podcast using OpenAI gpt-4o. Letterboxd allows for list creation from a CSV of film names and release years.t-4o + Langchain to return this 5.  information in a structure JSON format, which includes a one-sentence summary of the reference and a timestamp link so that viewers can go directly to that moment in the podcast. 
 
-6. Upload the summary & film list to Letterboxd using Selenium. Selenium loops through the summary and film table CSVs, executing the Letterboxd create list flow. 
+6. Upload the summary & film list to Letterboxd using [Selenium]([url](https://github.com/SeleniumHQ)). Selenium loops through the summary and film table CSVs, executing the Letterboxd create list flow. 
