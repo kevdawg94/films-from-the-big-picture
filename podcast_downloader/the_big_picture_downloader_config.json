@@ -1,0 +1,12 @@
+{
+  "if_directory_empty": "download_last_5_episodes",
+  "download_delay": "10",
+  "podcasts": [
+    {
+      "name": "The Big Picture",
+      "rss_link": "https://feeds.megaphone.fm/the-big-picture",
+      "path": "/content/drive/MyDrive/TBP_Project/Transcripts/",
+      "file_name_template": "[%publish_date%] %title%.WAV"
+    }
+  ]
+}
