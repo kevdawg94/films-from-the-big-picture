@@ -1,5 +1,5 @@
 
-def process_diarization(transcripts_path):
+def process_diarization(transcripts_path, HF_TOKEN):
     import os
     import re
     import pandas as pd
