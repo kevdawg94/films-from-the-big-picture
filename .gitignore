@@ -2,3 +2,4 @@
 *.txt
 *.csv
 *.pyc
+.DS_Store
