@@ -7,10 +7,6 @@
 # Output: Saved json_ and summary_ CSV files to directory_path/CSV/
 
 def create_movie_lists(directory_path):
-    """
-    Generates movie lists from podcast transcripts.
-    """
-
     # Chunking imports
     from langchain.prompts import PromptTemplate, ChatPromptTemplate
 
@@ -369,12 +365,8 @@ def create_movie_lists(directory_path):
             line = '<a href="' + dict["url"] + '">' + dict["title"] + '</a> - ' + dict["reason"] + '\n\n'
             movie_link_list.extend(line)
 
-        # Translate list to string
-        movie_links_intro = 'The films mentioned in this episode include:'
-        movie_link_sentence = '\n\n\n\n <b>' + movie_links_intro + '<b> \n\n' + ''.join(movie_link_list)
+        movie_link_sentence = '\n\n\n\n <b>' + 'The films mentioned in this episode include:' + '<b> \n\n' + ''.join(movie_link_list)
 
-
-    # Loop through transcripts
     def process_transcripts(file_name, directory_files, directory_path):
         # episode_transcript = open(transcripts_path + file_name).read()
         """
@@ -403,6 +395,7 @@ def create_movie_lists(directory_path):
 
         # JSON generation
         episode_movie_list = get_episode_movie_list(film_list_structured_template, episode_transcript, episode_timestamp_link)
+        
         # Create movie link sentence
         create_movie_link_sentence(episode_movie_list)
 
