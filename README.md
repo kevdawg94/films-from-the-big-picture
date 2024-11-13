@@ -80,4 +80,5 @@ The pipeline requires these folders to organize the intermediate files:
 * [x] Automate pipeline execution
 * [ ] More efficient change data capture to reduce cost of daily executions
 * [ ] Automate reddit posting for audience growth
+* [ ] Simplify podcast info collection in list_creation.py using rss feed info. 
 * [ ] Collaborations with the Ringer?
